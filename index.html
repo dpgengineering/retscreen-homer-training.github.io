@@ -18,6 +18,22 @@ body {font-family: "Lato", sans-serif}
   overflow-x: hidden;
   padding-top: 20px;
 }
+  .block {
+  display: block;
+  width: 100%;
+  border: none;
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.block:hover {
+  background-color: #ddd;
+  color: black;
+}
 /* 
 .left {
   left: 0;
@@ -70,29 +86,29 @@ body {font-family: "Lato", sans-serif}
   <div class="mySlides w3-display-container w3-center">
     <img src="img/1.jpg" style="width:100%">
     <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
-      <h3>Green Energy</h3>
-      <p><b>We had the best time with Green Energy!</b></p>   
+      <h3>THE USE OF RETSCREEN EXPERT SOFTWARE</h3>
+      <p><b>FOR TECHNO-ECONOMIC AND ENVIRONMENTAL SUSTAINABILITY ANALYSIS.</b></p>   
     </div>
   </div>
   <div class="mySlides w3-display-container w3-center">
     <img src="img/2.jpg" style="width:100%">
     <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
-      <h3>Renewable Energy</h3>
-      <p><b>The atmosphere with Renewable Energy is lorem ipsum.</b></p>    
+      <h3>THE USE OF HOMER PRO SOFTWARE</h3>
+      <p><b>FOR HYBRID RENEWABLE ENERGY AND MICROGRID MODELLING.</b></p>    
     </div>
   </div>
   <div class="mySlides w3-display-container w3-center">
     <img src="img/3.jpg" style="width:100%">
     <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
       <h3>Coming Soon</h3>
-      <p><b>Thank you.</b></p>    
+      <p><b>FIVE (5) DAYS OF COMPREHENSIVE TRAINING</b></p>    
     </div>
   </div>
 
   <!-- The Band Section -->
-  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="Presenters">
-    <h2 class="w3-wide">THE Presenters</h2>
-    <iframe src="pages/Presenters.html" style="width:100%;height:500px;border:none">
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:1000px" id="Presenters">
+    <h2 class="w3-wide">The Presenters</h2>
+    <iframe src="pages/Presenters.html" style="width:100%;height:1000px;border:none">
     
     
     </iframe>
@@ -117,17 +133,19 @@ body {font-family: "Lato", sans-serif}
 
   <!-- The Tour Section -->
   <div class="w3-black" id="Schedule">
-    <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+    <div class="w3-container w3-content w3-padding-64" style="max-width:1000px">
       <h2 class="w3-wide w3-center">Schedule</h2>
       <p class="w3-opacity w3-center"><i>Remember to book your tickets!</i></p><br>
       
       <div class="w3-cell-row">
         <div class="w3-container w3-red w3-cell">
-          <p><iframe src="pages/DrOwoSche.html" style="width:100%;height:500px;border:none"></iframe></p>
+          <h3 class="w3-wide w3-center">SCHEDULE FOR RETSCREEN EXPERT SOFTWARE TO CARRY OUT TECHNO-ECONOMIC AND ENVIRONMENTAL SUSTAINABILITY ANALYSIS TRAINING</h3>
+          <p><iframe src="pages/DrOwoSche.html" style="width:100%;height:1000px;border:none"></iframe></p>
         </div>
         
         
         <div class="w3-container w3-green w3-cell">
+          <h3 class="w3-wide w3-center">SCHEDULE FOR HOMER PRO HYBRID RENEWABLE ENERGY AND MICROGRID MODELLING SOFTWARE TRAINING.</h3>
           <p><iframe src="pages/DrLanreSche.html" style="width:100%;height:500px;border:none"></iframe></p>
         </div>
       </div>
@@ -137,29 +155,8 @@ body {font-family: "Lato", sans-serif}
 
   <!-- The Contact Section -->
   <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="Payment">
-    <h2 class="w3-wide w3-center">CONTACT</h2>
-    <p class="w3-opacity w3-center"><i>Fan? Drop a note!</i></p>
-    <div class="w3-row w3-padding-32">
-      <div class="w3-col m6 w3-large w3-margin-bottom">
-        <i class="fa fa-map-marker" style="width:30px"></i> Chicago, US<br>
-        <i class="fa fa-phone" style="width:30px"></i> Phone: +00 151515<br>
-        <i class="fa fa-envelope" style="width:30px"> </i> Email: mail@mail.com<br>
-      </div>
-      <div class="w3-col m6">
-        <form action="/action_page.php" target="_blank">
-          <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
-            <div class="w3-half">
-              <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
-            </div>
-            <div class="w3-half">
-              <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
-            </div>
-          </div>
-          <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
-          <button class="w3-button w3-black w3-section w3-right" type="submit">SEND</button>
-        </form>
-      </div>
-    </div>
+    <h2 class="w3-wide w3-center">Reserve Your Spot</h2>
+    <button class="block">Make Payment</button>
   </div>
   
 <!-- End Page Content -->
@@ -206,13 +203,6 @@ function myFunction() {
   }
 }
 
-// When the user clicks anywhere outside of the modal, close it
-var modal = document.getElementById('ticketModal');
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
 </script>
 
 </body>
