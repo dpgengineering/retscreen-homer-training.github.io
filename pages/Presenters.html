@@ -2,6 +2,7 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
 body {
   font-family: Arial;
@@ -64,6 +65,19 @@ body {
   background-color: white;
   overflow: hidden;
 }
+  
+  .card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+
+.title {
+  color: grey;
+  font-size: 18px;
+}
 </style>
 </head>
 <body>
@@ -98,7 +112,21 @@ body {
 </div>
 
 <div class="split right">
-  <div class="centered">
+  
+  <div class="card">
+  <img src="../img/DrLanreProfilePicture.JPG" alt="DrLanreProfilePicture" style="width:100%">
+  <h1>Dr Lanre Olatomiwa</h1>
+  <p class="title">CEO & Founder, Example</p>
+  <p>Harvard University</p>
+  <div style="margin: 24px 0;">
+    <a href="#"><i class="fa fa-dribbble"></i></a> 
+    <a href="#"><i class="fa fa-twitter"></i></a>  
+    <a href="#"><i class="fa fa-linkedin"></i></a>  
+    <a href="#"><i class="fa fa-facebook"></i></a> 
+  </div>
+</div>
+  
+<!--   <div class="centered">
     <img src="../img/DrLanreProfilePicture.JPG" alt="DrLanreProfilePicture">
     <h2>Dr Lanre Olatomiwa</h2>
     <p>Some text here too.</p>
@@ -107,7 +135,7 @@ body {
     <a href="#"><i class="fa fa-facebook"></i></a>
    
     
-  </div>
+  </div> -->
   
   <button class="accordion">In Brief</button>
     <div class="panel">
