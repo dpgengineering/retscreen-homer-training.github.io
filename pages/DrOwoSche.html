@@ -136,6 +136,46 @@ body {
   left: 0%;
   }
 }
+  
+/*Tool tip    */
+  .tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
 </style>
 </head>
 <body>
@@ -145,30 +185,67 @@ body {
     <div class="content">
       <h2>Day 1</h2>
       <p>Introduction to RETScreen and Overview of the software.</p>
+      
+      <div class="tooltip">More Comments
+        <span class="tooltiptext">The participant will be exposed to all the software
+        <br>
+        They will be taught how to use the software for benchmarking analysis, feasibility analysis, performance analysis, and portfolio analysis
+        </span>
+      </div>
+      
     </div>
   </div>
   <div class="container right">
     <div class="content">
       <h2>Day 2</h2>
       <p>Design of Solar PV modules.</p>
+      
+      <div class="tooltip">More Comments
+        <span class="tooltiptext">The participants will be taught how to design for a solar PV.
+        <br>
+        They will learn how to calculate (1) Power Generation Factor of each location (2) Solar Energy Demand in a building (3) PV Energy Required (4) PV Module Sizing (5) Inverter Sizing and  (6) Battery Sizing  
+        </span>
+      </div>
+      
     </div>
   </div>
   <div class="container left">
     <div class="content">
       <h2>Day 3</h2>
       <p>Simulation using the Software.</p>
+      
+      <div class="tooltip">More Comments
+        <span class="tooltiptext">Participants will be taught how to use the software to simulate  for (1) Energy  Analysis (2) Financial Analysis (3) Cost Analysis (4) Emission Analysis (5) Sensitivity Analysis and (6) Risk Analysis.
+        </span>
+      </div>
+      
+
     </div>
   </div>
   <div class="container right">
     <div class="content">
       <h2>Day 4</h2>
       <p>Simulation using the Software Continued.</p>
+      
+      <div class="tooltip">More Comments
+        <span class="tooltiptext">Participants will be taught how to use the software to simulate  for (1) Energy  Analysis (2) Financial Analysis (3) Cost Analysis (4) Emission Analysis (5) Sensitivity Analysis and (6) Risk Analysis
+        </span>
+      </div>
+      
+
     </div>
   </div>
   <div class="container left">
     <div class="content">
       <h2>Day 5</h2>
       <p>Question and Answer Session.</p>
+      
+      <div class="tooltip">More Comments
+        <span class="tooltiptext">The participant’s doubts, questions, and challenges will be discussed and relevant answers provided.
+        </span>
+      </div>
+      
+
     </div>
   </div>
   
