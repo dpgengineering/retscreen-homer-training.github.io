@@ -136,11 +136,49 @@ body {
   left: 0%;
   }
 }
+  
+ /*  accordion  */
+  .accordion {
+  background-color: #eee;
+/*   color: #444; */
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc; 
+}
+.accordion:after {
+  content: '\002B';
+  color: #777;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  color: black;
+}
 </style>
 </head>
 <body>
 
-<div class="timeline">
+<!-- <div class="timeline">
   <div class="container left">
     <div class="content">
       <h2>Day 1</h2>
@@ -176,6 +214,57 @@ body {
     </div>
   </div>
 </div>
+ -->
+      <button class="accordion">Day 1: General introduction to HOMER and Overview of the software.</button>
+    <div class="panel active">
+      <p>
+        <li>	The participant will be exposed to the overview of the software and its capabilities. </li>
+        <li>	They will learn about option for getting the required data for HOMER simulation. </li>
+        <li>		They will learn  how to use the software to calculate technical feasibility, economic value and other metrics of system design using combination of simulation, optimization and sensitivity analysis. </li>
+      </p>
+    </div>
 
+    <button class="accordion">Day 2: Design of hybrid off-grid & grid-connected renewable energy system.</button>
+    <div class="panel">
+      <p>        
+        <li>	The participants will be taught how to design for an off-grid and on-grid hybrid renewable energy (Solar PV/wind/diesel  and Solar PV/wind/grid etc)). </li>
+        <li>	They will learn how to calculate (1) Power generation factor of each RE sources (2) energy demand (4) component sizing for off-grid sand on-grid system etc. </li>
+      </p>
+    </div>
+    
+    <button class="accordion">Day 3: Simulation using the Software (Case studies treatment).</button>
+    <div class="panel">
+      <p>
+        <li>	This module will familiarize participants with HOMER for carrying out simulation optimization and sensitive analysis on selected case studies of hybrid energy system configuration. </li>
+        <li>	Participants will be taught how to use the software to simulate  for,  energy  analysis, economic  analysis emission analysis and sensitivity analysis for specific case studies </li>
+     </p>
+    </div>
+    
+    <button class="accordion">Day 4: Simulation using the Software Continued(Case studies treatment).</button>
+    <div class="panel">
+      <p>With this, the participants will be exposed to more advance topic such as design for multiple generators, designing for high renewable penetration, making decision on grid extension to rural areas, understand how to work with HOMER advanced storage and many more.</p>
+    </div>
+    
+    <button class="accordion">Day 5: Question and Answer Session.</button>
+    <div class="panel">
+      <p>The participant’s doubts, questions, and challenges will be discussed and relevant answers provided.</p>
+    </div>
+  <script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script> 
+  
 </body>
 </html>
