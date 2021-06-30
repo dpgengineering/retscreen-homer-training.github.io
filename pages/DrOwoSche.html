@@ -176,10 +176,36 @@ body {
   visibility: visible;
   opacity: 1;
 }
+  
+  /*  accordion  */
+  .accordion {
+  background-color: #eee;
+/*   color: #444; */
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc; 
+}
+
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+  color: black;
+}
 </style>
 </head>
 <body>
-
+<!-- 
 <div class="timeline">
   <div class="container left">
     <div class="content">
@@ -249,7 +275,39 @@ body {
     </div>
   </div>
   
-</div>
+</div> -->
+    <button class="accordion">Day 1: Introduction to RETScreen and Overview of the software.</button>
+    <div class="panel active">
+      <p>
+        The participant will be exposed to all the software
+        <br>
+        They will be taught how to use the software for benchmarking analysis, feasibility analysis, performance analysis, and portfolio analysis
+      </p>
+    </div>
 
+    <button class="accordion">Day 2: Design of Solar PV modules.</button>
+    <div class="panel">
+      <p>The participants will be taught how to design for a solar PV.
+        <br>
+        They will learn how to calculate (1) Power Generation Factor of each location (2) Solar Energy Demand in a building (3) PV Energy Required (4) PV Module Sizing (5) Inverter Sizing and  (6) Battery Sizing  </p>
+    </div>
+    
+    <button class="accordion">Day 3: Simulation using the Software.</button>
+    <div class="panel">
+      <p>
+        Participants will be taught how to use the software to simulate  for (1) Energy  Analysis (2) Financial Analysis (3) Cost Analysis (4) Emission Analysis (5) Sensitivity Analysis and (6) Risk Analysis.
+     </p>
+    </div>
+    
+    <button class="accordion">Day 4: Simulation using the Software Continued.</button>
+    <div class="panel">
+      <p>Participants will be taught how to use the software to simulate  for (1) Energy  Analysis (2) Financial Analysis (3) Cost Analysis (4) Emission Analysis (5) Sensitivity Analysis and (6) Risk Analysis.</p>
+    </div>
+    
+    <button class="accordion">Day 5: Question and Answer Session.</button>
+    <div class="panel">
+      <p>The participant’s doubts, questions, and challenges will be discussed and relevant answers provided.</p>
+    </div>
+  
 </body>
 </html>
